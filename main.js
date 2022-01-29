@@ -19,6 +19,7 @@ const ffmpeg = require('fluent-ffmpeg')
 const moment = require("moment-timezone")
 //
 const { color } = require('./libreria/color')
+const { getGroupAdmins } = require('./libreria/functions')
 //
 prefix = '.'
 //
