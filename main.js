@@ -75,6 +75,12 @@ client.ev.on('messages.upsert', async (up) => {
              const isOwner = ownerNumber.includes(sender)
              const pushname =  mek.pushName || "A/Z"
               const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
+              const groupId = isGroup ? groupMetadata.id : ""
+              const groupOwner = isGroup ? groupMetadata.owner : ""
+              const groupDesc = isGroup ? groupMetadata.desc : ""
+              const groupName = isGroup ? groupMetadata.subject : ""
+              const groupMembers = isGroup ? groupMetadata.participants : ""
+              const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ""
 //
           if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEJECUTANDO\x1b[1;37m]', color("<["), chalk.rgb(255,131,0).underline(command), color("]>"), 'Por', color(pushname), 'Chat', color(isGroup ? groupName : 'Privado'), 'Fecha', color(time), color("\n[_>]"))
 	  if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;34mRECIVIDO\x1b[1;37m]', color("{"), chalk.rgb(255,131,0).underline(budy || type), color("}"), 'De', color(sender.split('@')[0]), 'Chat', color(isGroup ? groupName : 'Privado'), 'Fecha', color(time))
@@ -136,7 +142,7 @@ default:
 }
     } catch (e) {
 		e = String(e)
-        console.log(color('[ERROR]', 'red'), color(e, 'white'))
+        console.log(color('\n[ERROR]', 'red'), color(e+'\n', 'white'))
 }
 })
 }
