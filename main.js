@@ -20,6 +20,8 @@ const moment = require("moment-timezone")
 //
 const { color } = require('./libreria/color')
 //
+prefix = '.'
+//
 async function start() {
 	const client = makeWASocket({
 		printQRInTerminal: true,
