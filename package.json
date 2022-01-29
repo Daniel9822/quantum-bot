@@ -19,7 +19,7 @@
     "bot"
   ],
   "author": "Matt_M",
-  "license": "MIT",
+  "license": "GNU",
   "dependencies": {
     "@adiwajshing/baileys": "^4.0.0",
     "@adiwajshing/keyed-db": "^0.2.4",
