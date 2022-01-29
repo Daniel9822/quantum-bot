@@ -5,7 +5,7 @@
 
 <h1 align="center">Simple Bot WhatsApp-MD / Aun tiene errores :'v <img src="https://user-images.githubusercontent.com/77204223/121404250-0f8cec00-c95c-11eb-9cec-41e9c5a42ef6.gif"></h1>
 
-<h2>âš¡ <i>Redes sociales </h2> 
+<h2>⚡ <i>Redes sociales </h2> 
 </a> 
 <P align="center">
 <a href="https://youtu.be/ed-6VSF-GGc" target="_blank">
@@ -20,7 +20,7 @@
   <img src="https://i.ibb.co/Tvz406S/IMG-20220124-182133.jpg" width="60px" height="60px">
 </a>
 
-<h2>ðŸ¥µ <i>EstadÃ­sticas</i> </h2> 
+<h2>😳 <i>Estadísticas</i> </h2> 
 
 <p align="center">
   <img align="left" height="150px" src="https://github-readme-stats.vercel.app/api?username=NeKosmic&theme=tokyonight&show_icons=true" />
