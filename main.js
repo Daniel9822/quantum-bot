@@ -52,7 +52,7 @@ client.ev.on('creds.update', saveState)
 //
 client.ev.on('messages.upsert', async up => {
        try {
-            //if (!up.messages) return
+            if (!up.messages) return
             const mek = up.messages[0]
             if (!mek.message) return
             mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
