@@ -30,6 +30,16 @@
  
 </div>
 
+<h2>[_>] <i>Instalación </i> </h2> 
+
+```bash
+> git clone https://github.com/NeKosmic/kintaro-bot
+> cd kintaro-bot
+> bash install.sh
+> npm start
+
+```
+
 ```javascript
 const texto = `Sexy El Que Lo Lea 7w7`
 console.log(texto)
