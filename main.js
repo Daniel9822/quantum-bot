@@ -33,12 +33,12 @@ async function start() {
 client.ev.on('connection.update', async (conexion) => {
         const { connection, lastDisconnect } = conexion;
         if (connection === 'open') {
-            console.log('2', '\nCONECTADO UwUr\n')
+            console.log('\nCONECTADO UwUr\n')
             // 
         }
         
         if (connection == 'connecting') {
-        	console.log('2', '\nCONECTANDO... U.U')
+        	console.log('CONECTANDO... U.U')
         } else if (connection === 'close') {
             console.log(color('[!]','red'), color('Conexion perdida, reconectando... u.u', 'red'))
             lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
@@ -72,9 +72,14 @@ client.ev.on('messages.upsert', async (up) => {
              const ownerNumber = ["51995386439@s.whatsapp.net"]
              const isGroup = from.endsWith('@g.us')
              const sender = isGroup ? (mek.key.participant ? mek.key.participant : mek.participant) : mek.key.remoteJid
+             const isOwner = ownerNumber.includes(sender)
              const pushname =  mek.pushName || "A/Z"
               const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
-            
+//
+          if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEJECUTANDO\x1b[1;37m]', color("<["), chalk.rgb(255,131,0).underline(command), color("]>"), 'Por', color(pushname), 'Chat', color(isGroup ? groupName : 'Privado'), 'Fecha', color(time), color("\n[_>]"))
+	  if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;34mRECIVIDO\x1b[1;37m]', color("{"), chalk.rgb(255,131,0).underline(budy || type), color("}"), 'De', color(sender.split('@')[0]), 'Chat', color(isGroup ? groupName : 'Privado'), 'Fecha', color(time))
+	  if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEJECUTANDO\x1b[1;37m]', color("<["), chalk.rgb(255,131,0).underline(command), color("]>"), 'Por', color(pushname), 'En el Grupo', color(isGroup ? groupName : 'Privado'), 'Fecha', color(time), color("\n[_>]"))
+	  if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;34mRECIVIDO\x1b[1;37m]', color("{"), chalk.rgb(255,131,0).underline(budy || type), color("}"), 'De', color(sender.split('@')[0]), 'En el Grupo', color(isGroup ? groupName : 'Privado'), 'Fecha', color(time))
 //
 
 const reply = (texto) => {
@@ -90,6 +95,44 @@ case 'menu':
 reply(`Hola ${pushname}!`)
 break
 
+//
+default:
+                if (budy.startsWith('=>')) {
+                    if (!isOwner && !botNumber) return reply(`*[ ! ] Solo el creador puede usar este comando*`)
+                    function Return(sul) {
+                        sat = JSON.stringify(sul, null, 2)
+                        bang = util.format(sat)
+                            if (sat == undefined) {
+                                bang = util.format(sul)
+                            }
+                            return reply(bang)
+                    }
+                    try {
+                        reply(util.format(eval(`(async () => { return ${budy.slice(3)} })()`)))
+                    } catch (e) {
+                        reply(String(e))
+                    }
+                }
+
+                if (budy.startsWith('>')) {
+                    if (!isOwner && !botNumber) return reply(`*[ ! ] Solo el creador puede usar este comando*`)
+                    try {
+                        let evaled = await eval(budy.slice(2))
+                        if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
+                        await reply(evaled)
+                    } catch (err) {
+                        m = String(err)
+                        await reply(m)
+                    }
+                }
+
+                if (budy.startsWith('$')) {
+                    if (!isOwner && !botNumber) return reply(`*[ ! ] Solo el creador puede usar este comando*`)
+                    exec(budy.slice(2), (err, stdout) => {
+                        if(err) return reply(err)
+                        if (stdout) return reply(stdout)
+                    })
+                }
 }
     } catch (e) {
 		e = String(e)
