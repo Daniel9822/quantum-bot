@@ -1,49 +1,65 @@
 {
-  "name": "wabot-md-test",
+  "name": "Quantum|Bot",
   "version": "0.5",
-  "description": "Full errores xd ",
-  "main": "main.js",
+  "description": "Bot para Whatsapp en español y un poco multilingüe :v",
+  "main": "Quantum.js",
+  "scripts": {
+    "start": "node Quantum.js"
+    "type": "commonjs"
+  },
   "directories": {
     "lib": "libreria"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js",
-    "postinstall": "npm i typescript -g && tsc -p ./node_modules/@adiwajshing/baileys"
-  },
   "keywords": [
+    "whatsapp-bot",
     "termux",
-    "baileys",
-    "whatsapp",
     "baileys-md",
-    "bot"
+    "bot",
+    "whatsapp"
   ],
-  "author": "Matt_M",
+  "author": "Matt_Mdz",
   "license": "GNU",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.0.0",
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "axios": "^0.21.1",
+    "axios": "^0.24.0",
+    "async": "^3.2.2",
     "chalk": "^4.1.2",
-    "file-type": "^16.5.0",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "cfonts": "^2.10.0",
+    "cheerio": "^1.0.0-rc.10",
+    "cookie": "^0.4.2",
+    "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
-    "form-data": "^4.0.0",
-    "fs": "^0.0.1-security",
-    "hotswap": "^1.1.0",
-    "jimp": "^0.16.1",
+    "fs": "0.0.1-security",
+    "got": "^11.8.3",
+    "g-i-s": "^2.1.6",
+    "google-it": "^1.6.2",
+    "hxz-api": "^1.0.1",
+    "human-readable": "^0.2.1",
     "moment-timezone": "^0.5.34",
-    "node-fetch": "^2.6.6",
-    "pino": "^7.5.1",
+    "node-fetch": "^2.6.1",
+    "node-webpmux": "^3.1.0",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "pino": "^7.0.5",
+    "performance-now": "^2.1.0",
     "qrcode-terminal": "^0.12.0",
     "request": "^2.88.2",
-    "sharp": "^0.29.3"   
+    "remove.bg": "^1.3.0",
+    "spinnies": "^0.5.1",
+    "sharp": "^0.29.3",
+    "util": "^0.12.4",
+    "yt-search": "^2.10.2"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/NeKosmic/Quantum-Bot.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/NeKosmic/Quantum-Bot/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/NeKosmic/Quantum-Bot#readme"
 }
