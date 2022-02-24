@@ -1,6 +1,6 @@
 {
   "name": "Quantum-Bot",
-  "version": "0.5",
+  "version": "0.0.5",
   "description": "Bot para Whatsapp en español y un poco multilingüe :v",
   "main": "Quantum.js",
   "scripts": {
