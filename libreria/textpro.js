@@ -63,13 +63,13 @@ async function textpro(url, text) {
     .join("; ");
   const $ = cheerio.load(caritoken);
   const token = $('input[name="token"]').attr("value");
-  const form = new FormData();
+  let _resUlt = new FormData();
   if (typeof text === "string") text = [text];
-  for (let texts of text) form.append("text[]", texts);
-  form.append("submit", "Go");
-  form.append("token", token);
-  form.append("build_server", "https://textpro.me");
-  form.append("build_server_id", 1);
+  for (let texts of text) _resUlt.append("text[]", texts);
+  _resUlt.append("submit", "Go");
+  _resUlt.append("token", token);
+  _resUlt.append("build_server", "https://textpro.me");
+  _resUlt.append("build_server_id", 1);
   const geturl2 = await fetch(url, {
     method: "POST",
     headers: {
@@ -77,9 +77,9 @@ async function textpro(url, text) {
       "Accept-Language": "en-US,en;q=0.9",
       "User-Agent": "GoogleBot",
       Cookie: hasilcookie,
-      ...form.getHeaders(),
+      ..._resUlt.getHeaders(),
     },
-    body: form.getBuffer(),
+    body: _resUlt.getBuffer(),
   });
   const caritoken2 = await geturl2.text();
   const token2 = /<div.*?id="form_value".+>(.*?)<\/div>/.exec(caritoken2);
