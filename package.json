@@ -52,7 +52,7 @@
     "spinnies": "^0.5.1",
     "sharp": "^0.29.3",
     "util": "^0.12.4",
-    "youtube-sr": "^4.1.13"
+    "youtube-search-api": "^1.1.0"
   },
   "devDependencies": {},
   "repository": {
