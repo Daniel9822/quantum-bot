@@ -3,8 +3,8 @@ const chalk = require('chalk')
 const MyPkg = require('../../package.json')
 const MyInfo = JSON.parse(fs.readFileSync('./informacion.json'))
 
-exports.PanelMenu = (prefix, pushname, actividad, role, mono, nwn) => {
-  return `${mono}< [ ${MyInfo.NombreDelBot} ] >${mono}
+exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nwn) => {
+  return `${monospace}< [ ${MyInfo.NombreDelBot} ] >${monospace}
 ╔═══════════
 ║❂ Tempo ativo : ${actividad}
 ║❂ Versão do bot : ${MyPkg.version}
@@ -163,8 +163,8 @@ exports.FooterPM = (CovidApi) => {
 ┃✞ Morto : ${CovidApi.deaths}
 ┗─━─━ 「 🌎 」 ━─━─┛`
 }
-exports.PanelMenu2 = (prefix) => {
-  return `${mono}[ MENU-RANDOM ]${mono}
+exports.PanelMenu2 = (prefix, monospace) => {
+  return `${monospace}[ MENU-RANDOM ]${monospace}
  
 ╔═══════════
 ║
@@ -213,8 +213,8 @@ exports.PanelMenu2 = (prefix) => {
 ╚═══════════
 `
 }
-exports.MenuArte = (prefix) => {
-  return `${mono}[ CRIAR-LOGOTIPO ]${mono}
+exports.MenuArte = (prefix, monospace) => {
+  return `${monospace}[ CRIAR-LOGOTIPO ]${monospace}
  
 ╔═══════════
 ║☞ ${prefix}attp
@@ -237,8 +237,8 @@ exports.MenuArte = (prefix) => {
 ╚═══════════
 `
 }
-exports.AniMenu = (prefix) => {
-  return `${mono}[ ANIME-MENU ]${mono}
+exports.AniMenu = (prefix, monospace) => {
+  return `${monospace}[ ANIME-MENU ]${monospace}
  
 ╔═══════════
 ║圆 ${prefix}himnootaku
@@ -257,8 +257,8 @@ exports.AniMenu = (prefix) => {
 ╚═══════════
 `
 }
-exports.MenuH = (prefix) => {
-  return `${mono}[ MENU +18 ]${mono}
+exports.MenuH = (prefix, monospace) => {
+  return `${monospace}[ MENU +18 ]${monospace}
  
 ╔═══════════
 ║㋡ ${prefix}stickerh
