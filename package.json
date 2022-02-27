@@ -21,6 +21,7 @@
   "license": "GNU",
   "dependencies": {
     "@adiwajshing/baileys": "^4.0.1",
+    "@adiwajshing/keyed-db": "^0.2.4",
     "axios": "^0.24.0",
     "async": "^3.2.2",
     "chalk": "^4.1.2",
