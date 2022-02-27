@@ -7,7 +7,7 @@
 -> pkg install git
 -> git clone https://github.com/NeKosmic/Quantum-Bot
 -> cd Quantum-Bot
--> bash instalo.sh
+-> bash install.sh
 -> npm start
 ```
 
