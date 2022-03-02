@@ -132,7 +132,7 @@ const getBuffer = async (url, options) => {
 		})
 		return res.data
 	} catch (e) {
-		return err
+		return e
 	}
 }
 
