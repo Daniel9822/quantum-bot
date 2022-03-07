@@ -2,6 +2,24 @@
 <img src="https://acegif.com/wp-content/gif/outerspace-51.gif" width="400" height="230"/>
 </p>
 
+<p align="center">
+<a href="#"><img title="WhatsApp-Bot-MD" src="https://img.shields.io/badge/-TERMUX--BOT--WHATSAPP-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+</p>
+<p align="center">
+<a href="https://github.com/NeKosmic"><img title="Autor" src="https://img.shields.io/badge/Autor-Matt-orange?style=for-the-badge&logo=github"></a>
+</p>
+
+## Características del bot 
+|  Contenido  |                                           Sip |
+| :---------------------------------------------: | :-----------: |
+| Bienvenida automática|✔️|
+| Descargador de músicas|✔️|
+| Descargador de videos|✔️|
+| Creador de logos|✔️|
+| Buscadores|✔️|
+| NSFW|✔️|
+| Botones interactivos|✔️|
+
 ## Instalacion en termux
 ```cmd
 -> pkg install git
