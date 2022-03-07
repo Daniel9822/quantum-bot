@@ -12,13 +12,21 @@
 ## Características del bot 
 |  Contenido  |                                           Sip |
 | :---------------------------------------------: | :-----------: |
+| Crea stickers|✔️|
 | Bienvenida automática|✔️|
-| Descargador de músicas|✔️|
-| Descargador de videos|✔️|
+| Anti-Link|✔️|
+| Anti-Fakes|✔️|
+| Anti-Estranjeros|✔️|
+| Anti-Trabas|✔️|
 | Creador de logos|✔️|
-| Buscadores|✔️|
-| NSFW|✔️|
+| Imagenes-Random|✔️|
+| Juegos|✔️|
+| Modo Publico/Privado|✔️|
+| Modo NSFW|✔️|
+| Chat-Bot|✔️|
+| Descarga de música/videos|✔️|
 | Botones interactivos|✔️|
+| Nuevo estilo multidispositivo|✔️|
 
 ## Instalacion en termux
 ```cmd
