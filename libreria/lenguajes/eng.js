@@ -98,6 +98,7 @@ ${nwn}
 *║├ ${prefix}nivelear*
 *║├ ${prefix}antilink*
 *║├ ${prefix}antilink2*
+*║├ ${prefix}antitraba*
 *║├ ${prefix}antifakes*
 *║├ ${prefix}antiextranjeros*
 *║├ ${prefix}wlc*
