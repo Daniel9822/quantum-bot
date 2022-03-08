@@ -17,6 +17,7 @@
 | Crea stickers|✔️|
 | Bienvenida automática|✔️|
 | Anti-Link|✔️|
+| Anti-privados|✔️|
 | Anti-Fakes|✔️|
 | Anti-Estranjeros|✔️|
 | Anti-Trabas|✔️|
