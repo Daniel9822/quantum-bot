@@ -56,7 +56,7 @@
 ```bash 
 
 > pm2 monit
-[_>] Para salir del monitor usa la combinación de CTRL + c
+[ ! ] Para salir del monitor usa la combinación de CTRL + c
 ```
 
 4.- Eliminar PM2 para el bot :
