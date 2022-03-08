@@ -116,6 +116,8 @@ ${nwn}
 *║├ ${prefix}modo2*
 *║├ ${prefix}enlinea*
 *║├ ${prefix}sinlinea*
+*║├ ${prefix}noprivado*
+*║├ ${prefix}siprivado*
 *║├ ${prefix}predit*
 *║├ ${prefix}nombrebot*
 *║├ ${prefix}mycreador*
@@ -292,6 +294,9 @@ exports.MenuH = (prefix, monospace) => {
 ╚═══════════
 `
 }
+exports.BanCall = (helpcall) => {
+  return `The calls to the Bot number are forbidden!\nContact the creator : ${helpcall}`
+}
 exports.AutoSaludo = () => {
   return `*_My main creator joined the group_ ✓*\n*[ Welcome nwn ]*`
 }
@@ -347,8 +352,8 @@ exports.NoTraba1 = () => {
 exports.NoTraba2 = (saltos, eliminar, pushname) => {
   return `Mark chat as read ✓\n${saltos}\n=> The number : ${eliminar}\n=> Alias : ${pushname}\n[ ! ] You have just sent a text that contains many characters which can cause device crashes`
 }
-exports.NoPriv = () => {
-  return `[ ! ] Private chat is prohibited [ ! ]`
+exports.NoPriv = (privcre) => {
+  return `[ ! ] Private chat is prohibited [ ! ]\nMy creator in case you need help : ${privcre}`
 }
 exports.NoLinks1 = () => {
   return `The good thing is that the link detected is from this group`

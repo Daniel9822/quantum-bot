@@ -116,6 +116,8 @@ ${nwn}
 *║├ ${prefix}modo2*
 *║├ ${prefix}enlinea*
 *║├ ${prefix}sinlinea*
+*║├ ${prefix}noprivado*
+*║├ ${prefix}siprivado*
 *║├ ${prefix}predit*
 *║├ ${prefix}nombrebot*
 *║├ ${prefix}mycreador*
@@ -292,6 +294,9 @@ exports.MenuH = (prefix, monospace) => {
 ╚═══════════
 `
 }
+exports.BanCall = (helpcall) => {
+  return `Panggilan ke nomor bot dilarang!\nHubungi pencipta : ${helpcall}`
+}
 exports.AutoSaludo = () => {
   return `*_Pencipta utama saya bergabung dengan grup_ ✓*\n*[ Selamat datang nwn ]*`
 }
@@ -347,8 +352,8 @@ exports.NoTraba1 = () => {
 exports.NoTraba2 = (saltos, eliminar, pushname) => {
   return `Tandai obrolan sebagai telah dibaca ✓\n${saltos}\n=> Nomor : ${eliminar}\n=> Alias : ${pushname}\n[ ! ] Anda baru saja mengirim teks yang berisi banyak karakter yang dapat menyebabkan perangkat mogok`
 }
-exports.NoPriv = () => {
-  return `[ ! ] Obrolan pribadi dilarang [ ! ]`
+exports.NoPriv = (privcre) => {
+  return `[ ! ] Obrolan pribadi dilarang [ ! ]\nPencipta saya jika Anda membutuhkan bantuan : ${privcre}`
 }
 exports.NoLinks1 = () => {
   return `Untung tautan yang terdeteksi berasal dari grup ini owo`
