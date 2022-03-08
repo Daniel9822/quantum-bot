@@ -39,6 +39,31 @@
 -> bash install.sh
 -> npm start
 ```
+## Ejecutar el bot estable con PM2
+
+1.- instalar PM2 en termux :
+```bash
+
+> npm install -g pm2
+```  
+
+2.- Ejecutar el bot en PM2 :
+```bash 
+
+> pm2 start Quantum.js
+```
+3.- Visualizar proceso en PM2 :
+```bash 
+
+> pm2 monit
+[_>] Para salir del monitor usa la combinación de CTRL + c
+```
+
+4.- Eliminar PM2 para el bot :
+```bash
+
+> pm2 kill
+```
 
 ## Mis redes sociales ✓
 <a href="https://youtube.com/channel/UC_Pp8pT9vbT15k5_-i6oseA"><img width="60px" alt="Youtube" title="Youtube" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiYrf6LEg3xKz9iuv3OcmplEWUY8Etgv7e-g&usqp=CAU"/></a>
