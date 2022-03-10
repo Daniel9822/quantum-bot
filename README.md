@@ -70,6 +70,11 @@
 ## WhatsApp bot multidevice version beta, si encuentras algún error por favor informarme :D
 <a href="https://wa.me/51995386439?text=Wenas...+me+ayudas+con+el+bot+multidevice+:)"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
+## Agradecimientos especiales :3
+
+* <a href="https://github.com/adiwajshing/Baileys"><img alt="GitHub" src="https://img.shields.io/badge/adiwajshing/Baileys%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white">
+</p>
+
 <img src="https://github.com/NeKosmic/NK-BOT/blob/main/culebrita.svg" />
 </div>
 
