@@ -181,9 +181,9 @@ async function UploadFile (input) {
 	})
 }
 
-function webp2mp4File(path) {
+function webp2mp4File (path) {
 	return new Promise((resolve, reject) => {
-		 const form = new BodyForm()
+		 const form = new FormData()
 		 form.append('new-image-url', '')
 		 form.append('new-image', fs.createReadStream(path))
 		 axios({
@@ -197,19 +197,11 @@ function webp2mp4File(path) {
 			  const bodyFormThen = new FormData()
 			  const $ = cheerio.load(data)
 			  const file = $('input[name="file"]').attr('value')
-			  const token = $('input[name="token"]').attr('value')
-			  const convert = $('input[name="file"]').attr('value')
-			  const gotdata = {
-				   file: file,
-				   token: token,
-				   convert: convert
-			  }
-			  bodyFormThen.append('file', gotdata.file)
-			  bodyFormThen.append('token', gotdata.token)
-			  bodyFormThen.append('convert', gotdata.convert)
+			  bodyFormThen.append('file', file)
+			  bodyFormThen.append('convert', "Convert WebP to MP4!")
 			  axios({
 				   method: 'post',
-				   url: 'https://ezgif.com/webp-to-mp4/' + gotdata.file,
+				   url: 'https://ezgif.com/webp-to-mp4/' + file,
 				   data: bodyFormThen,
 				   headers: {
 						'Content-Type': `multipart/form-data; boundary=${bodyFormThen._boundary}`
@@ -219,7 +211,7 @@ function webp2mp4File(path) {
 				   const result = 'https:' + $('div#output > p.outfile > video > source').attr('src')
 				   resolve({
 						status: true,
-						message: "Creditos a : MRHRTZ ✓",
+						message: "Agradecido con MRHRTZ :3",
 						result: result
 				   })
 			  }).catch(reject)
