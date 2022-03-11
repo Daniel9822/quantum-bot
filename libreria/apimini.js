@@ -2,6 +2,7 @@ const fs = require('fs')
 const axios = require('axios')
 const chalk = require('chalk')
 const cheerio = require('cheerio')
+const FormData = require("form-data")
 
 const dlmediafire = async (url) => {
 const res = await axios.get(url)
