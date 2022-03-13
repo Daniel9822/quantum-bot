@@ -1,4 +1,5 @@
-let fechajs = new Date()
+let tiempoTranscurrido = Date.now()
+let fechajs = new Date(tiempoTranscurrido)
 
 var Epoca = fechajs.getFullYear()
 
