@@ -4,6 +4,7 @@ clear
 pkg update && pkg upgrade
 apt install nodejs
 apt install ffmpeg
+pkg install imagemagick
 pkg install yarn
 yarn
 
