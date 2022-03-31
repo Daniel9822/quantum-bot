@@ -52,14 +52,24 @@
 
 > pm2 start Quantum.js
 ```
-3.- Visualizar proceso en PM2 :
+3.- Detener el bot en PM2 :
+```bash 
+
+> pm2 stop Quantum.js
+```
+4.- Reiniciar el bot en PM2 :
+```bash 
+
+> pm2 restart Quantum.js
+```
+5.- Visualizar proceso en PM2 :
 ```bash 
 
 > pm2 monit
 [ ! ] Para salir del monitor usa la combinación de CTRL + c
 ```
 
-4.- Eliminar PM2 para el bot :
+6.- Eliminar PM2 para el bot :
 ```bash
 
 > pm2 kill
