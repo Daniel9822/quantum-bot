@@ -1,15 +1,15 @@
 {
 	"Prefijo": ".",
+	"LenguajeDelBot": "es",
 	"NombreDelBot": "Quantum|Bot",
 	"ControladorDelBot": [
 		"51995386439@s.whatsapp.net",
 		"52999999999@s.whatsapp.net",
 		"53999999999@s.whatsapp.net",
-		"54999999999@s.whatsapp.net",
-		"55999999999@s.whatsapp.net"
+		"55999999999@s.whatsapp.net",
+		"54999999999@s.whatsapp.net"
 	],
 	"CoCreador": "Matt_Mdz",
-	"NumeroDelBot": "51995386439",
 	"MyPais": "51",
 	"MiembrosMinimoEnUnGrupo": "2",
 	"LimiteParaUsarComandos": "30",
