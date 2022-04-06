@@ -3,159 +3,159 @@ const chalk = require('chalk')
 const MyPkg = require('../../package.json')
 const MyInfo = JSON.parse(fs.readFileSync('./informacion.json'))
 
-exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nwn) => {
+exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nvn) => {
   return `${monospace}< [ ${MyInfo.NombreDelBot} ] >${monospace}
 ╔═══════════
 ║❂ Tiempo activo : ${actividad}
 ║❂ Version del bot : ${MyPkg.version}
-║❂ Creador : ${MyInfo.CoCreador}
+║❂ Dueño : ${MyInfo.CoCreador}
 ║❂ Prefijo : 「  ${prefix}  」
 ║❂ Cliente : ${pushname}️
 ║❂ Rol del Cliente : ${role}
 ╚═══════════
-${nwn}
+${nvn}
 ~|-------------------------|~
 ⮕ *_COMANDOS_  ☷*
 ~|-------------------------|~
 
-*╔═══════════*
-*║ _MULTIMEDIA :_*
-*║╭——————————*
-*║├ ${prefix}informacion*
-*║├ ${prefix}apoyo*
-*║├ ${prefix}wame*
-*║├ ${prefix}milimite*
-*║├ ${prefix}minivel*
-*║├ ${prefix}estadobot*
-*║├ ${prefix}creador*
-*║├ ${prefix}gpinfo*
-*║├ ${prefix}admins*
-*║├ ${prefix}gplink*
-*║├ ${prefix}tienda*
-*║├ ${prefix}horario*
-*║╰——————————*
-*╚═══════════*
-*╔═══════════*
-*║ _PASATIEMPO :_*
-*║╭——————————*
-*║├ ${prefix}quien*
-*║├ ${prefix}ruleta*
-*║├ ${prefix}tragamoneda*
-*║├ ${prefix}calumnia*
-*║├ ${prefix}dados*
-*║├ ${prefix}dado*
-*║├ ${prefix}emparejar*
-*║├ ${prefix}top5*
-*║├ ${prefix}testgay*
-*║├ ${prefix}votacion*
-*║├ ${prefix}sivotar*
-*║├ ${prefix}novotar*
-*║├ ${prefix}vervotos*
-*║├ ${prefix}reiniciarvotos*
-*║╰——————————*
-*╚═══════════*
-*╔═══════════*
-*║ _CONVERSORES :_*
-*║╭——————————*
-*║├ ${prefix}sticker*
-*║├ ${prefix}stickergif*
-*║├ ${prefix}rescom*
-*║├ ${prefix}aimg*
-*║├ ${prefix}reversavid*
-*║├ ${prefix}lentovid*
-*║├ ${prefix}acelerarvid*
-*║├ ${prefix}amp3*
-*║├ ${prefix}aumentarbajo*
-*║├ ${prefix}distorsionado*
-*║├ ${prefix}lento*
-*║├ ${prefix}demonio*
-*║├ ${prefix}superveloz*
-*║├ ${prefix}ardilla*
-*║├ ${prefix}nightcore*
-*║├ ${prefix}inframundo*
-*║├ ${prefix}tiendaimg*
-*║╰——————————*
-*╚═══════════*
-*╔═══════════*
-*║ _CMDS ADMINS :_*
-*║╭——————————*
-*║├ ${prefix}cgpen*
-*║├ ${prefix}agp*
-*║├ ${prefix}nombregp*
-*║├ ${prefix}editdesgp*
-*║├ ${prefix}fotogrupo*
-*║├ ${prefix}invocar*
-*║├ ${prefix}darpoder*
-*║├ ${prefix}quitarpoder*
-*║├ ${prefix}ban*
-*║├ ${prefix}enlinea*
-*║├ ${prefix}lenguaje*
-*║╰┬> ACTIVADORES*
-*║╭╯*
-*║├ ${prefix}modofull*
-*║├ ${prefix}modoanime*
-*║├ ${prefix}hmodo*
-*║├ ${prefix}nivelear*
-*║├ ${prefix}antilink*
-*║├ ${prefix}antilink2*
-*║├ ${prefix}antitraba*
-*║├ ${prefix}antifakes*
-*║├ ${prefix}antiextranjeros*
-*║├ ${prefix}wlc*
-*║╰┬> JUEGOS*
-*║╭╯*
-*║├ ${prefix}deathnote*
-*║╰——————————*
-*╚═══════════*
-*╔═══════════*
-*║ _CMDS CREADOR :_*
-*║╭——————————*
-*║├ ${prefix}modo1*
-*║├ ${prefix}publico*
-*║├ ${prefix}privado*
-*║├ ${prefix}modo2*
-*║├ ${prefix}enlinea*
-*║├ ${prefix}sinlinea*
-*║├ ${prefix}noprivado*
-*║├ ${prefix}siprivado*
-*║├ ${prefix}predit*
-*║├ ${prefix}nombrebot*
-*║├ ${prefix}mycreador*
-*║├ ${prefix}misredes*
-*║├ ${prefix}editarlimite*
-*║├ ${prefix}perfilbot*
-*║├ ${prefix}suprimir*
-*║├ ${prefix}bcgc*
-*║├ ${prefix}bc*
-*║├ ${prefix}banear*
-*║├ ${prefix}quitarbaneo*
-*║├ ${prefix}.*
-*║╰┬> ACTIVADORES*
-*║╭╯*
-*║├ ${prefix}chatbot*
-*║├ ${prefix}banchat*
-*║╰┬> ~MODO KUAKER~*
-*║ ~PSDT- Estos comandos son de virustraba~*
-*║ ~ten cuidado al usarlos!~*
-*║╭╯*
-*║├ ${prefix}c1*
-*║╰┬> AVANZADO*
-*║╭╯*
-*║├ =>*
-*║├ >*
-*║├ $*
-*║╰——————————*
-*╚═══════════*
-*╔═══════════*
-*║ _MAS COMANDOS EXTRA :_*
-*║╭——————————*
-*║├ ${prefix}mascmds*
-*║├ ${prefix}randmenu*
-*║├ ${prefix}crealogos*
-*║├ ${prefix}mianime*
-*║├ ${prefix}labiblia*
-*║╰——————————*
-*╚═══════════*
+╔═══════════
+║ _CONVERSORES :_
+║╭——————————
+║├ ${prefix}sticker
+║├ ${prefix}tiendaimg
+║├ ${prefix}aimg
+║├ ${prefix}inframundo
+║├ ${prefix}nightcore
+║├ ${prefix}happyhardcore
+║├ ${prefix}ardilla
+║├ ${prefix}superveloz
+║├ ${prefix}demonio
+║├ ${prefix}lento
+║├ ${prefix}distorcionado
+║├ ${prefix}aumentarbajo
+║├ ${prefix}amp3
+║├ ${prefix}acelerarvid
+║├ ${prefix}lentovid
+║├ ${prefix}reversavid
+║├ ${prefix}rescom
+║╰——————————
+╚═══════════
+╔═══════════
+║ _CMDS-CASUAL :_
+║╭——————————
+║├ ${prefix}miperfil
+║├ ${prefix}informacion
+║├ ${prefix}apoyo
+║├ ${prefix}baneados
+║├ ${prefix}miwasa
+║├ ${prefix}milimite
+║├ ${prefix}minivel
+║├ ${prefix}estadobot
+║├ ${prefix}creador
+║├ ${prefix}infogrupo
+║├ ${prefix}admins
+║├ ${prefix}grupolink
+║├ ${prefix}tienda
+║├ ${prefix}horario
+║├ ${prefix}keyaudio
+║╰——————————
+╚═══════════
+╔═══════════
+║ _PASATIEMPO :_
+║╭——————————
+║├ ${prefix}quien
+║├ ${prefix}ruleta
+║├ ${prefix}tragamoneda
+║├ ${prefix}calumnia
+║├ ${prefix}dados
+║├ ${prefix}dado
+║├ ${prefix}emparejar
+║├ ${prefix}top5
+║├ ${prefix}top10
+║├ ${prefix}testgay
+║├ ${prefix}votacion
+║├ ${prefix}vervotos
+║├ ${prefix}reiniciarvotos
+║├ ${prefix}afk
+║╰——————————
+╚═══════════
+╔═══════════
+║ _CMDS ADMINS :_
+║╭——————————
+║├ ${prefix}cgpen
+║├ ${prefix}agp
+║├ ${prefix}editnamegp
+║├ ${prefix}editdesgp
+║├ ${prefix}fotogrupo
+║├ ${prefix}invocar
+║├ ${prefix}darpoder
+║├ ${prefix}quitarpoder
+║├ ${prefix}ban
+║├ ${prefix}activos
+║╰┬> _ACTIVADORES_
+║╭╯
+║├ ${prefix}modofull
+║├ ${prefix}animeuwu
+║├ ${prefix}hmodo
+║├ ${prefix}nivelear
+║├ ${prefix}wlc
+║├ ${prefix}antitraba
+║├ ${prefix}antilink
+║├ ${prefix}antilink2
+║├ ${prefix}antifakes
+║├ ${prefix}antifakes2
+║├ ${prefix}antiextranjeros
+║╰┬> _JUEGOS_
+║╭╯
+║├ ${prefix}deathnote
+║╰——————————
+╚═══════════
+╔═══════════
+║ _CMDS DUEÑO :_
+║╭——————————
+║├ ${prefix}modo1
+║├ ${prefix}modo2
+║├ ${prefix}antiprivado
+║├ ${prefix}predit
+║├ ${prefix}nombrebot
+║├ ${prefix}midueño
+║├ ${prefix}misredes
+║├ ${prefix}editarlimite
+║├ ${prefix}neoqr
+║├ ${prefix}perfilbot
+║├ ${prefix}suprimir
+║├ ${prefix}bcgc
+║├ ${prefix}bc
+║├ ${prefix}banear
+║├ ${prefix}quitarbaneo
+║├ ${prefix}.
+║├ ${prefix}lenguaje
+║╰┬> _ACTIVADORES_
+║╭╯
+║├ ${prefix}chatbot
+║├ ${prefix}banchat
+║╰┬> ~MODO KUAKER~
+║ ~PSDT- Estos comandos son de virustraba~
+║ ~ten cuidado al usarlos!~
+║╭╯
+║├ ${prefix}c1
+║╰┬> _AVANZADO_
+║╭╯
+║├ =>
+║├ >
+║├ $
+║╰——————————
+╚═══════════
+╔═══════════
+║ _MAS COMANDOS EXTRA :_
+║╭——————————
+║├ ${prefix}mascmds
+║├ ${prefix}randmenu
+║├ ${prefix}crealogos
+║├ ${prefix}mianime
+║├ ${prefix}labiblia
+║╰——————————
+╚═══════════
 `
 }
 exports.FooterPM = (CovidApi) => {
@@ -171,11 +171,11 @@ exports.PanelMenu2 = (prefix, monospace) => {
  
 ╔═══════════
 ║
-╠═> MULTIMEDIA
-║➣ ${prefix}miperfil
+║➣ ${prefix}verip
 ║➣ ${prefix}gruposwa
-║➣ ${prefix}voz
-║➣ ${prefix}covid19
+║➣ ${prefix}vos
+║➣ ${prefix}simi
+║➣ ${prefix}covid
 ║➣ ${prefix}clima
 ║➣ ${prefix}github
 ║➣ ${prefix}traductor
@@ -185,6 +185,10 @@ exports.PanelMenu2 = (prefix, monospace) => {
 ║➣ ${prefix}wikipedia
 ║➣ ${prefix}playstore
 ║➣ ${prefix}letra
+║➣ ${prefix}xd
+║➣ ${prefix}perros
+║➣ ${prefix}gatos
+║➣ ${prefix}pato
 ║➣ ${prefix}wallpaper
 ║➣ ${prefix}tiktok
 ║
@@ -192,15 +196,12 @@ exports.PanelMenu2 = (prefix, monospace) => {
 ║➣ ${prefix}mediafire
 ║➣ ${prefix}play
 ║➣ ${prefix}play2
+║➣ ${prefix}ytmp3
+║➣ ${prefix}ytmp4
 ║➣ ${prefix}fbdl
 ║➣ ${prefix}tiktokdl
 ║
 ╠═> PASATIEMPO
-║➣ ${prefix}simi
-║➣ ${prefix}minidatos
-║➣ ${prefix}minombre
-║➣ ${prefix}frasesamor
-║➣ ${prefix}top10
 ║➣ ${prefix}preguntame
 ║➣ ${prefix}v_o_f
 ║➣ ${prefix}notificacion
@@ -209,10 +210,9 @@ exports.PanelMenu2 = (prefix, monospace) => {
 ║➣ ${prefix}consejo
 ║➣ ${prefix}randimg
 ║➣ ${prefix}djbot
-║➣ ${prefix}xd
-║➣ ${prefix}perros
-║➣ ${prefix}gatos
-║➣ ${prefix}patos
+║➣ ${prefix}minidatos
+║➣ ${prefix}frasesamor
+║➣ ${prefix}minombre
 ╚═══════════
 `
 }
@@ -231,11 +231,11 @@ exports.MenuArte = (prefix, monospace) => {
 ║☞ ${prefix}arcoiris
 ║☞ ${prefix}hielo
 ║☞ ${prefix}lapiz
-║☞ ${prefix}gameover
 ║☞ ${prefix}roca3d
 ║☞ ${prefix}ficcion
 ║☞ ${prefix}romper
 ║☞ ${prefix}sangre
+║☞ ${prefix}gameover
 ║☞ ${prefix}pornhub
 ╚═══════════
 `
@@ -295,7 +295,10 @@ exports.MenuH = (prefix, monospace) => {
 `
 }
 exports.BanCall = (helpcall) => {
-  return `Las llamadas al numero del bot estan prohibidos!\nPongase en contacto con el creador : ${helpcall}`
+  return `Las llamadas al numero del bot estan prohibidos!\nPongase en contacto con mi dueño : ${helpcall}`
+}
+exports.FDeG = () => {
+  return `\n\nEl numero del bot fue eliminado de un grupo!\n\n`
 }
 exports.AutoSaludo = () => {
   return `*_Joder, mi creador principal se unio al grupo_ ✓*\n*[ Se bienvenido nwn ]*`
@@ -306,8 +309,8 @@ exports.Wlc1 = () => {
 exports.Wlc2 = () => {
   return `Creador`
 }
-exports.Wlc3 = (num, metadata, fechaCompleta, gpdesc) => {
-  return `⚡ *Bienvenid@ @${num.split("@")[0]} a este grandioso grupo :*\n${metadata.subject}\n⚡ *Fecha de ingreso : ${fechaCompleta}*\n⚡ _*Espero y te agrade tu estancia aqui, no olvides respetar a los participantes y las reglas*_ ;)\n\n*Normas del grupo actualmente :* \n${gpdesc}`
+exports.Wlc3 = (num, metadata, fechaCompleta, gpdesc, nwn) => {
+  return `⚡ *Bienvenid@ @${num.split("@")[0]} a este grandioso grupo :*\n${metadata.subject}\n⚡ *Fecha de ingreso : ${fechaCompleta}*\n⚡ _*Espero y te agrade tu estancia aqui, no olvides respetar a los participantes y las reglas*_ ;)\n\n*Normas del grupo actualmente :* \n${nwn}\n${gpdesc}`
 }
 exports.Wlc4 = () => {
   return `ADIOS... 😔`
@@ -353,7 +356,7 @@ exports.NoTraba2 = (saltos, eliminar, pushname) => {
   return `Marcar el chat como leido ✓\n${saltos}\n=> El número : ${eliminar}\n=> Alias : ${pushname}\n[ ! ] Acaba de enviar un texto que contiene muchos caracteres que puede ocasionar fallos en los dispositivos`
 }
 exports.NoPriv = (privcre) => {
-  return `[ ! ] El chat por privado esta prohibido [ ! ]\nMi creador por si necesita ayuda : ${privcre}`
+  return `[ ! ] El chat por privado esta prohibido [ ! ]\nMi dueño por si necesita ayuda : ${privcre}`
 }
 exports.NoLinks1 = () => {
   return `Joder, lo weno es que el enlace detectado es de este grupo owo`
@@ -396,7 +399,7 @@ exports.AdminBot = () => {
   return `*[ ! ] El bot tiene que ser administrador*`
 }
 exports.SoloCreador = () => {
-  return `*[ ! ] Este comando solo puede ser usado por el creador del bot*`
+  return `*[ ! ] Este comando solo puede ser usado por el dueño del bot*`
 }
 //⚡//
 exports.Modo0 = () => {
@@ -412,7 +415,7 @@ exports.Modo3 = () => {
   return `Modo publico activado, ahora todos los participantes podran usar al bot`
 }
 exports.Modo4 = () => {
-  return `Modo privado activado, ahora solo el creador del bot podra usarlo`
+  return `Modo privado activado, ahora solo el dueño del bot podra usarlo`
 }
 exports.ModNet0 = () => {
   return `[ MODO 2 ]`
@@ -429,10 +432,19 @@ exports.ModNet3 = () => {
 exports.ModNet4 = () => {
   return `Bot modo Sin-Linea, ahora solo algunos comandos estaran disponibles`
 }
+exports.NoPriv0 = () => {
+  return `[ ANTI-PRIVADO ]`
+}
 exports.NoPriv1 = () => {
-  return `Modo Anti-Privado desactivado`
+  return `SI-PRIVADOS 📳`
 }
 exports.NoPriv2 = () => {
+  return `NO-PRIVADOS 📴`
+}
+exports.NoPriv3 = () => {
+  return `Modo Anti-Privado desactivado`
+}
+exports.NoPriv4 = () => {
   return `Modo Anti-Privado activado, ahora todo aquel que hable al bot por privado sera bloqueado`
 }
 //✍️//
@@ -461,7 +473,7 @@ exports.PrinCre1 = () => {
   return `*[ ! ] El nombre debe contener 25 caracteres como maximo [ ! ]*`
 }
 exports.PrinCre2 = () => {
-  return `El nombre del creador fue alterado correctamente ✓\nNombre nuevo:`
+  return `El nombre del dueño fue alterado correctamente ✓\nNombre nuevo:`
 }
 exports.MyRed0 = () => {
   return `*[ ! ] Coloque o pegue sus redes sociales*`
@@ -513,7 +525,7 @@ exports.BcGrupos1 = (gmap) => {
   return `Mensaje transmitido a ${gmap.length} grupos ✓`
 }
 exports.BcTodos0 = (tmap) => {
-  return `Transmitiendo mensaje en ${tmap.length} chats\nFinalizando en ${tmap.length * 1.5} segundos`
+  return `Transmitiendo mensaje en ${tmap.length} chats activos\nFinalizando en ${tmap.length * 1.5} segundos`
 }
 exports.BcTodos1 = () => {
   return `⚡ *Mensaje simultaneo compartido con exito :D*⚡`
@@ -606,7 +618,7 @@ exports.MyReg4 = () => {
   return `*[ ! ] Minimo de edad 13 años*`
 }
 exports.MyReg5 = (nwn, time, nomreg, pushname, edreg, sender, codereg) => {
-  return `〘  *REGISTRO* 〙${nwn}\n❥Fecha y hora de Registro \n❥${time}\n┏─━─━━─━─━━─━─\n╠≽️ *Nombre Registrado* : *${nomreg}*\n╠≽️ *Nombre usado en whatsapp* : *${pushname}*\n╠≽️ *Edad* : *${edreg}*\n╠≽️ *Nº* : *wa.me/${sender.split("@")[0]}*\n┗─━─━━─━─━━─━─\n_Codigo de registro_ : *${codereg}* `
+  return `〘  *REGISTRO* 〙${nwn}\n❥Fecha y hora de Registro \n❥${time}\n┏─━─━━─━─━━─━─\n╠≽️ *Nombre Registrado : ${nomreg}*\n╠≽️ *Nombre usado en whatsapp : ${pushname}*\n╠≽️ *Edad : ${edreg}*\n╠≽️ *Nº : wa.me/${sender.split("@")[0]}*\n┗─━─━━─━─━━─━─\n_Codigo de registro_ : *${codereg}* `
 }
 exports.MyReg6 = () => {
   return `Que tengas un excelente día! :D`
@@ -665,3 +677,5 @@ exports.MCmds1 = () => {
 ⡝⡵⡈⢟⢕⢕⢕⢕⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⣀⣈⠙
 ⡝⡵⡕⡀⠑⠳⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢉⡠⡲⡫⡪⡪⡣
 */
+
+
