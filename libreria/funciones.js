@@ -66,14 +66,6 @@ const runtime = function(seconds) {
 	return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
-const getGroupAdmins = (participantes) => {
-    var admins = []
-    for (let i of participantes) {
-        i.admin === "admin" ? admins.push(i.id) : ''
-    }
-    return admins
-}
-
 const formatp = sizeFormatter({
     std: 'JEDEC', //'SI' = default | 'IEC' | 'JEDEC'
     decimalPlaces: 2,
@@ -155,7 +147,7 @@ const getRandom = (ext) => {
     return `${Math.floor(Math.random() * 10000)}${ext}`
 }
 
-module.exports = { start, success, close, format, runtime, getGroupAdmins, formatp, getTime, sleep, clockString, fetchJson, getBuffer, jsonformat, logic, parseMention, getRandom }
+module.exports = { start, success, close, format, runtime, formatp, getTime, sleep, clockString, fetchJson, getBuffer, jsonformat, logic, parseMention, getRandom }
 
 //============Auto Actualización :v=======================//
 let file = require.resolve(__filename)
