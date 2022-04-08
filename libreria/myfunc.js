@@ -6,7 +6,7 @@ exports.smsg = (conn, m, store) => {
     if (!m) return m
     let M = proto.WebMessageInfo
     
-    conn.decodeJid = (jid) => {
+    let wadecodeJid = (jid) => {
     if (!jid) return jid
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {}
@@ -20,8 +20,8 @@ exports.smsg = (conn, m, store) => {
         m.chat = m.key.remoteJid
         m.fromMe = m.key.fromMe
         m.isGroup = m.chat.endsWith('@g.us')
-        m.sender = conn.decodeJid(m.fromMe && conn.user.id || m.participant || m.key.participant || m.chat || '')
-        if (m.isGroup) m.participant = conn.decodeJid(m.key.participant) || ''
+        m.sender = wadecodeJid(m.fromMe && conn.user.id || m.participant || m.key.participant || m.chat || '')
+        if (m.isGroup) m.participant = wadecodeJid(m.key.participant) || ''
     }
     if (m.message) {
         m.mtype = getContentType(m.message)
@@ -43,7 +43,7 @@ exports.smsg = (conn, m, store) => {
             m.quoted.id = m.msg.contextInfo.stanzaId
 			m.quoted.chat = m.msg.contextInfo.remoteJid || m.chat
             m.quoted.isBaileys = m.quoted.id ? m.quoted.id.startsWith('BAE5') && m.quoted.id.length === 16 : false
-			m.quoted.sender = conn.decodeJid(m.msg.contextInfo.participant)
+			m.quoted.sender = wadecodeJid(m.msg.contextInfo.participant)
 			m.quoted.fromMe = m.quoted.sender === (conn.user && conn.user.id)
             m.quoted.text = m.quoted.text || m.quoted.caption || m.quoted.conversation || m.quoted.contentText || m.quoted.selectedDisplayText || m.quoted.title || ''
 			m.quoted.mentionedJid = m.msg.contextInfo ? m.msg.contextInfo.mentionedJid : []
@@ -117,3 +117,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
+
