@@ -1,4 +1,4 @@
-const { proto, delay, getContentType } = require('@adiwajshing/baileys')
+const { proto, delay, getContentType, jidDecode } = require('@adiwajshing/baileys')
 const chalk = require('chalk')
 const fs = require('fs')
 
@@ -117,4 +117,5 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
+
 
