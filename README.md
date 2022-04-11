@@ -21,6 +21,7 @@
 | Anti-Fakes|✔️|
 | Anti-Estranjeros|✔️|
 | Anti-Trabas|✔️|
+| Anti-Spam_CMDS|✔️|
 | Creador de logos|✔️|
 | Imagenes-Random|✔️|
 | Juegos|✔️|
