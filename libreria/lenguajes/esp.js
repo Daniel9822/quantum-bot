@@ -61,7 +61,7 @@ ${nvn}
 ║╰——————————
 ╚═══════════
 ╔═══════════
-║ _PASATIEMPO :_
+║ _JUEGOS :_
 ║╭——————————
 ║├ ${prefix}quien
 ║├ ${prefix}ruleta
