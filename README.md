@@ -1,4 +1,4 @@
-<div align="center"><h3> Bienvenid@? nwn </h3> <img src="https://cbsnews1.cbsistatic.com/hub/i/2017/10/17/b34c14c8-750e-4afa-838d-ba9da0a3b042/171016-nasa-gravitational-waves-article.gif" width="45px">
+<div align="center"><h3> Bienvenid@! nwn </h3>
 
 <P align="center">
 <img src="https://acegif.com/wp-content/gif/outerspace-51.gif" width="400" height="230"/>
@@ -13,6 +13,10 @@
 <p align="center">
 <a href="#"><img title="WhatsApp-Bot-MD" src="https://img.shields.io/badge/-TERMUX--BOT--WHATSAPP-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
+
+<img src="https://cbsnews1.cbsistatic.com/hub/i/2017/10/17/b34c14c8-750e-4afa-838d-ba9da0a3b042/171016-nasa-gravitational-waves-article.gif" width="45px">
+
+
 <p align="center">
 <a href="https://github.com/NeKosmic"><img title="Autor" src="https://img.shields.io/badge/Autor-Matt-orange?style=for-the-badge&logo=github"></a>
 </p>
