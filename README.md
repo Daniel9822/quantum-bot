@@ -2,9 +2,13 @@
 
 <P align="center">
 <img src="https://acegif.com/wp-content/gif/outerspace-51.gif" width="400" height="230"/>
-
- [ Bot_Simple_Multi-Dispositivo ]
 </p>
+
+<P align="center">
+[ Bot_Simple_Multi-Dispositivo ]
+</p>
+
+
 
 <p align="center">
 <a href="#"><img title="WhatsApp-Bot-MD" src="https://img.shields.io/badge/-TERMUX--BOT--WHATSAPP-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
