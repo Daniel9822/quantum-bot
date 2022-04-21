@@ -2,7 +2,7 @@
 
 <P align="center">
 <img src="https://acegif.com/wp-content/gif/outerspace-51.gif" width="400" height="230"/>
-Bot_Simple_Multi-Dispositivo
+[ Bot_Simple_Multi-Dispositivo ]
 </p>
 
 <p align="center">
