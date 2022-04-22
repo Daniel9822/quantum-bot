@@ -1,4 +1,4 @@
-<div align="center"><h3> Bienvenid@! nwn </h3> </div>
+<div align="center"><h3> Bienvenid@! nwn </h3>
 
 <P align="center">
 <img src="https://acegif.com/wp-content/gif/outerspace-51.gif" width="400" height="230"/>
@@ -41,6 +41,8 @@
 | Descarga de música/videos|✔️|
 | Botones interactivos|✔️|
 | Nuevo estilo multidispositivo|✔️|
+
+</div>
 
 ## Instalacion en termux
 ```cmd
