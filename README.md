@@ -1,4 +1,4 @@
-<div align="center"><h3> Bienvenid@! nwn </h3>
+<div align="center"><h3> Bienvenid@! nwn </h3> </div>
 
 <P align="center">
 <img src="https://acegif.com/wp-content/gif/outerspace-51.gif" width="400" height="230"/>
