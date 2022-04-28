@@ -121,6 +121,8 @@ ${nvn}
 ║├ ${prefix}midueño
 ║├ ${prefix}misredes
 ║├ ${prefix}editarlimite
+║├ ${prefix}darpremium
+║├ ${prefix}nopremium
 ║├ ${prefix}neoqr
 ║├ ${prefix}perfilbot
 ║├ ${prefix}suprimir
