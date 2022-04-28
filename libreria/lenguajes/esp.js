@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const MyPkg = require('../../package.json')
 const MyInfo = JSON.parse(fs.readFileSync('./informacion.json'))
 
-exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nvn) => {
+exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nwn, isPrremium) => {
   return `${monospace}< [ ${MyInfo.NombreDelBot} ] >${monospace}
 ╔═══════════
 ║❂ Tiempo activo : ${actividad}
@@ -11,6 +11,7 @@ exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nvn) => {
 ║❂ Dueño : ${MyInfo.CoCreador}
 ║❂ Prefijo : 「  ${prefix}  」
 ║❂ Cliente : ${pushname}️
+║❂ Premium : ${isPrremium ? "Si" : "No"}
 ║❂ Rol del Cliente : ${role}
 ╚═══════════
 ${nvn}
