@@ -14,7 +14,7 @@ exports.PanelMenu = (prefix, pushname, actividad, role, monospace, nwn, isPrremi
 ║❂ Premium : ${isPrremium ? "Si" : "No"}
 ║❂ Rol del Cliente : ${role}
 ╚═══════════
-${nvn}
+${nwn}
 ~|-------------------------|~
 ⮕ *_COMANDOS_  ☷*
 ~|-------------------------|~
