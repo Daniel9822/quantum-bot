@@ -39,6 +39,7 @@
 | Modo NSFW|✔️|
 | Chat-Bot|✔️|
 | Descarga de música/videos|✔️|
+| Traba WhatsApp|✔️|
 | Botones interactivos|✔️|
 | Nuevo estilo multidispositivo|✔️|
 
