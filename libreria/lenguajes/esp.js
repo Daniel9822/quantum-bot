@@ -197,6 +197,7 @@ exports.PanelMenu2 = (prefix, monospace) => {
 ║
 ╠═> DESCARGADOR
 ║➣ ${prefix}mediafire
+║➣ ${prefix}audio
 ║➣ ${prefix}play
 ║➣ ${prefix}play2
 ║➣ ${prefix}ytmp3
