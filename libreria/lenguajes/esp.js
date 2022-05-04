@@ -348,7 +348,7 @@ exports.NivelUp = (fechaCompleta, senderNumber, getLevel, getLevelingLevel, send
   return `「 ⚡ACTUALIZACION DE NIVEL⚡  」\n\n➸ *Fecha* : ${fechaCompleta}\n➸ *Usuario* : ${senderNumber}\n➸ *Nivel* : ${getLevel} -> ${getLevelingLevel(sender)}\n➸ *Progreso de nivel : ${per}*\n➸ *XP* : ${getLevelingXp(sender)}\n➸ *De acuerdo a tu XP pasas a ser* : ${role}\n➸ *Nivel de poder* : ${role2}\n\n⚡ *Bonificación por subir de nivel :*\n_[ + 3 de límite ]_`
 }
 exports.MinGp1 = () => {
-  return `Pedir soporte o ayuda a`
+  return `Para más información comuníquese con `
 }
 exports.MinGp2 = () => {
   return `*[ ! ] Lo siento, minimo de miembros requeridos en el grupo debe ser :*`
